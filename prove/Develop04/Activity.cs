@@ -54,10 +54,10 @@ abstract class Activity
     {
         for (int i = seconds; i > 0; i--)
         {
-            Console.Write(GetSpinner(i) + " "); // Changed line to use custom spinner
+            Console.Write(GetSpinner(i) + " ");
             System.Threading.Thread.Sleep(1000);
             Console.SetCursorPosition(Console.CursorLeft - GetSpinner(i).Length - 1, Console.CursorTop);
-            Console.Write(" "); // Clear spinner before writing next one
+            Console.Write(" ");
             Console.SetCursorPosition(Console.CursorLeft - 1, Console.CursorTop);
         }
         Console.WriteLine();
@@ -65,7 +65,7 @@ abstract class Activity
 
     private string GetSpinner(int index)
     {
-        string[] customSpinner = { "|", "/", "-", "\\" }; // New ASCII art spinner animation
+        string[] customSpinner = { "|", "/", "-", "\\" };
         return customSpinner[index % customSpinner.Length];
     }
 
