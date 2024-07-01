@@ -47,7 +47,15 @@ class Program
                     LoadGoals();
                     break;
                 case "8":
-                    Console.WriteLine("DISCRIPTION HERE");
+                    
+                    Console.WriteLine("Adding a simple goal is a one time goal and once it is complete you will recive points.");
+                    Console.WriteLine("Adding an eternal goal and can be completed more than once. ");
+                    Console.WriteLine("Adding a checklist goal will give you a goal that you can complete a set number of times for a bonus reward.");
+                    Console.WriteLine("Recording progress will allowing to enter the Index of a goal you have completed and will give you points accordingly");
+                    Console.WriteLine("Display goal will show you all currently loaded goals and thier current progress.");
+                    Console.WriteLine("Save goals will save your goals an their state of completion to a file");
+                    Console.WriteLine("Load goals will load goals and thier progress from a file.");
+                    Console.WriteLine("Exit will terminate the program (be careful as unsaved progress will be deleted)");
                     break;
                 case "9":
                     exit = true;
