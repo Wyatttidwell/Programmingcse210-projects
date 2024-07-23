@@ -9,13 +9,12 @@ public class ProfileManager
     public void CreateProfile()
     {
         Console.WriteLine("Enter Profile Details:");
-        // Collect and set details for Profile
         currentProfile = new UserProfile
         {
-            Index = 1, // Placeholder index
-            Name = "John Doe", // Placeholder name
-            Weight = 180, // Placeholder weight
-            Height = 1.75, // Placeholder height
+            Index = 1,
+            Name = "John Doe",
+            Weight = 180, 
+            Height = 1.75, 
             ExerciseExperienceLevel = "Beginner",
             WeightGoal = 170
         };
@@ -40,8 +39,7 @@ public class ProfileManager
     {
         if (currentProfile != null)
         {
-            // Collect and set feedback for the profile
-            currentProfile.ProgressPercentage = 75; // Placeholder progress
+            currentProfile.ProgressPercentage = 75;
             Console.WriteLine($"Profile progress updated to: {currentProfile.ProgressPercentage}%");
         }
         else
